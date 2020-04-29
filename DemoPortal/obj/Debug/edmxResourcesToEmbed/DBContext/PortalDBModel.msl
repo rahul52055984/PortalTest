@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PortalDBModelStoreContainer" CdmEntityContainer="PortalDBEntities">
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="PortalDBModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Role1" ColumnName="Role" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginUsers">
+      <EntityTypeMapping TypeName="PortalDBModel.LoginUser">
+        <MappingFragment StoreEntitySet="LoginUser">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UpdateddBy" ColumnName="UpdateddBy" />
+          <ScalarProperty Name="UpdateedDate" ColumnName="UpdateedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

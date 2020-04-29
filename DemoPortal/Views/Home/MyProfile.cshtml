@@ -1,0 +1,70 @@
+﻿@model DemoPortal.Models.UserModel
+@{
+    ViewBag.Title = "MyProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>My Profile</h2>
+
+<hr />
+@using (Html.BeginForm("UpdateProfile", "Home", FormMethod.Post))
+{
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="form-control">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Full Name
+                            @Html.TextBoxFor(x => x.FullName, new { @class = "form-control", @readonly = "readonly" })
+                        </div>
+                        <div class="col-md-6">
+                            Email
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", @readonly = "readonly" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Mobile
+                            @Html.TextBoxFor(x => x.MobileNumber, new { @class = "form-control", @readonly = "readonly" })
+                        </div>
+                        <div class="col-md-6">
+                            Address
+                            @Html.TextBoxFor(x => x.Address, new { @class = "form-control", @readonly = "readonly" })
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:10px">
+                        <div class="col-md-6">
+                            Password
+                            @Html.TextBoxFor(x => x.Password, new { @class = "form-control", @readonly = "readonly" })
+                        </div>
+                        <div class="col-md-3">
+                            <input type="button" id="btnEdit" class="btn btn-primary" value="Edit" />
+                            <input type="submit" id="btnUpdate" class="btn btn-primary" value="Update" style="display:none" />
+                        </div>
+                        <div class="col-md-3">
+                            <input type="button" id="btnCancel" class="btn btn-danger" value="Cancel" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        $('#btnEdit').click(function () {
+            $(':input').prop('readonly', false)
+            $('#btnEdit').hide();
+            $('#btnUpdate').show();
+        })
+        $('#btnCancel').click(function () {
+            location.reload()
+        })
+
+    </script>
+

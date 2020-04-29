@@ -1,0 +1,61 @@
+﻿
+@using DemoPortal.Utility
+@model IEnumerable<DemoPortal.Models.UserModel>
+@{
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    UserSetting setting = new UserSetting();
+<div class="panel panel-default">
+   @*// @setting.UserName*@
+    <div class="panel-heading"><h3>User List</h3></div>
+    <div class="panel-body">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <tr>
+                    <td>User Name</td>
+                    <td>Email Id</td>
+                    <td>Password</td>
+                    <td>Mobile</td>
+                    <td>Address</td>
+                    <td>Created Date</td>
+                    <td>Role</td>
+                    @if (setting.UserType == (int)UserTypeEnum.Admin)
+                    {
+                        <td>Action</td>
+                    }
+
+                </tr>
+                @if (Model != null && Model.Count() > 0)
+                {
+                    foreach (var usr in Model)
+                    {
+                <tr>
+                    <td>@usr.FullName</td>
+                    <td>@usr.Email</td>
+                    <td>@usr.Password</td>
+                    <td>@usr.MobileNumber</td>
+                    <td>@usr.Address</td>
+                    <td>@usr.CreatedDate</td>
+                    <td>@usr.Role</td>
+                    @if (setting.UserType == (int)UserTypeEnum.Admin)
+                    {
+                        <td>
+                            <a href="~/Home/MyProfilebyAdmin?UserId=@usr.UserId">Some View</a>
+                            @*@Html.ActionLink("EDIT", "MyProfilebyAdmin", "Home")*@
+                        </td>
+                    }
+                    
+                </tr>
+                    }
+
+                }
+            </table>
+        </div>
+    </div>
+</div>
+}
+
+

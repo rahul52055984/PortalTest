@@ -1,0 +1,184 @@
+﻿/*body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+.relative {
+    position: relative;
+}
+
+.teklif {
+    color: #000;
+    margin-top: 51px;
+    margin-bottom: 20px;
+    box-shadow: -2px -2px 7px 5px rgba(8, 8, 8, 0.62);
+    padding: 45px;
+    border-radius: 10px;
+    background: white;
+}
+
+.button-social-login {
+}
+
+.wc-social-login a.button-social-login {
+    text-align: center;
+    text-shadow: none;
+    line-height: normal;
+    font-weight: 400;
+    Üye Ol Daha hızlı giriş yapmak veya kolay kayıt için bir sosyal hesap kullanın. facebook ile girişFacebook ile Giriş google ile girişGoogle ile Giriş ya da Email adresiniz Email Şifre **** 2.3 border: 0;
+    margin: 0 0 1em;
+    padding: 6px 0;
+    box-shadow: none;
+    display: block;
+    border-radius: 3px;
+    color: #fff;
+}
+
+    .wc-social-login a.button-social-login .si {
+        color: #fff;
+        border: 0;
+        padding: 0;
+        vertical-align: middle;
+        background-size: 1.75em;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+.wc-social-login .button-social-login-facebook {
+    background: #3b5998;
+}
+
+.wc-social-login .button-social-login-google {
+    background: #DA4735;
+}
+
+.wc-social-login .arac-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.wc-social-login-divider {
+    text-align: center;
+    overflow: hidden;
+}
+
+    .wc-social-login-divider span {
+        display: inline-block;
+        position: relative;
+    }
+
+        .wc-social-login-divider span:before {
+            right: 100%;
+            margin-right: 15px;
+            background: #eee;
+        }
+
+        .wc-social-login-divider span:after {
+            left: 100%;
+            margin-left: 15px;
+            background: #eee;
+        }
+
+        .wc-social-login-divider span:after, .wc-social-login-divider span:before {
+            content: ' ';
+            position: absolute;
+            width: 600px;
+            height: 1px;
+            background: #eee;
+            top: 13px;
+        }
+
+
+
+
+
+
+
+
+
+
+.login-sec .copy-text {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+    .login-sec .copy-text i {
+        color: #FEB58A;
+    }
+
+    .login-sec .copy-text a {
+        color: #E36262;
+    }
+
+.login-sec h2 {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #DE6262;
+}
+
+    .login-sec h2:after {
+        content: " ";
+        height: 5px;
+        background: #FEB58A;
+        display: block;
+        margin-top: 20px;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+
+
+.round {
+    border-radius: 50%;
+}
+
+.card {
+    width: 100% !important;
+}
+
+
+
+@media (max-width: 890px) {
+    .userLogin {
+        font-size: 80px !important;
+        /*margin-top: 50%;*/
+    }
+}
+
+@media (min-width: 768px) {
+    .userLogin {
+        font-size: 80px !important;
+        /*margin-top: 50%;*/
+    }
+}
+/*font-size: 83px;
+margin-top: 50%;*/
